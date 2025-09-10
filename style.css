@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, red, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+header h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  letter-spacing: 0.0px;
+  line-height: 1.0; 
+
+}
+header h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #d1e4ff;
+}
+.breadcrumb {
+  background-color: #0a2a5e; /* Dark blue background */
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.breadcrumb span {
+  color: #ccc;
+  margin: 0 8px;
+}
+
+
+/* Banner */
+ .banner img {
+  display: block;         
+  margin: 0 auto;         
+  max-width: 700px;       
+  height: auto;           
+  border-radius: 10px;    
+  box-shadow: 0px 4px 10px skyblue; 
+}
+
+
+/* About Section */
+.about {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 1.1rem;
+}
+.banner img:hover {
+  transform: scale(1.05);   /* Slight zoom forward */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.5); /* Stronger shadow */
+}
+
+/* Agenda Section */
+.agenda {
+  padding: 2rem;
+  background: skyblue;
+}
+.agenda h3 {
+  margin-bottom: 1.2rem;
+  color: #1e3c72;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.agenda ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.agenda ul li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+.agenda ul li:hover {
+  transform: scale(1.03);
+  background: #dce9ff;
+}
+
+/* Details Section */
+.details {
+  padding: 2rem;
+  text-align: center;
+}
+.details .btn {
+  background: #2a5298;
+  color: white;
+  padding: 0.3rem 1.4rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.2s;
+}
+.details .btn:hover {
+  background: #1e3c72;
+  transform: scale(1.05);
+}
+.details a {
+  margin: 0 0.7rem;
+  color: #1e3c72;
+  font-weight: bold;
+  text-decoration: none;
+}
+.details a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #1e3c72;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .agenda ul {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    /* font-size: 2rem; */
+  }
+
+}
+
+
+@media print {
+  .banner, .details a {
+    display: none;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}
